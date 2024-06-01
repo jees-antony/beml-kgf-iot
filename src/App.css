@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+/* added for updation with navbar */
+/* App.css */
+.main-content {
+  transition: margin-left .5s;
+  padding: 10px;
+}
+
+.main-content.shifted {
+  margin-left: 250px;
+}
+
