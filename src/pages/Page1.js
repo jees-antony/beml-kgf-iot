@@ -19,14 +19,19 @@ const cardsData = [
   { name: 'Temperature', value: '25.6 °C' },
   { name: 'Humidity', value: '60%' },
   { name: 'Pressure', value: '101.3 kPa' },
+  { name: 'Wind Speed', value: '15 km/h' },
+  { name: 'Visibility', value: '10 km' },
+  { name: 'Cloud Cover', value: '40%' },
+  { name: 'Dew Point', value: '12 °C' },
+  { name: 'UV Index', value: '5' },
+  { name: 'Air Quality', value: 'Good' },
   // Add more cards as needed
 ];
 
   return (
     <div>
       <Cards cards={cardsData} />
-      <Cards cards={cardsData} />
-      <h1>Line Chart with Events</h1>
+      <h5>Line Chart with Events</h5>
       <LineChart data={data} events={events}/>
     </div>
   );
