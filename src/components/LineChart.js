@@ -47,8 +47,8 @@ const LineChart = ({ data, events }) => {
       yaxis: { title: 'Y Axis Title' },
       showlegend: true,
       hovermode: 'closest',
-      plot_bgcolor:"#a8a7a7",
-      paper_bgcolor:"#a8a7a7",
+      plot_bgcolor:"#fefefe",
+      paper_bgcolor:"#fefefe",
     };
 
     const config = { responsive: true, scrollZoom: true };
