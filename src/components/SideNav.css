@@ -27,6 +27,7 @@
   
   .sidenav .closebtn {
     position: absolute;
+    color: aliceblue;
     top: 0;
     right: 25px;
     font-size: 36px;
