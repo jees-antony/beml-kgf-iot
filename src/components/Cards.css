@@ -7,14 +7,14 @@
 }
 
 .params {
-  background-color: #ffffff;
+  background-color: #444242;
   width: 200px;
   margin: 3px;
   text-align: center;
   line-height: 30px;
   font-size: 18px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(199, 197, 197, 0.2);
   transition: 0.3s;
   padding: 8px;
 }

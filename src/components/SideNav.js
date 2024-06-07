@@ -5,11 +5,11 @@ import { Link } from 'react-router-dom';
 const SideNav = ({ isOpen, toggleNav }) => {
   return (
     <div className={`sidenav ${isOpen ? 'open' : ''}`}>
-      <a href="javascript:void(0)" className="closebtn" onClick={toggleNav}>&times;</a>
-      <Link to="/page1">Page1</Link>
-      <Link to="/page2">Page2</Link>
-      <Link to="/page3">Page3</Link>
-      
+      <span className="closebtn" onClick={toggleNav}>&times;</span>
+      <Link to="/page1">Dash</Link>
+      <Link to="/page2">Table</Link>
+      <Link to="/page3">Notif</Link>
+      <Link to="/page4">Report</Link>
     </div>
   );
 };

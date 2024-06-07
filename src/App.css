@@ -2,6 +2,7 @@
 .main-content {
   transition: margin-left .5s;
   padding: 10px;
+  background-color: rgb(54, 54, 54);
 }
 
 .main-content.shifted {
