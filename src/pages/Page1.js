@@ -1,9 +1,22 @@
 // src/pages/Page1.js
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LineChart from '../components/LineChart';
 import Cards from '../components/Cards';
+import Button from '../components/Button'; // Import Button component
+import DateTimePickerComponent from '../components/DateTimePickerComponent';
 
 const Page1 = () => {
+  const [startDateTime, setStartDateTime] = useState(new Date());
+  const [endDateTime, setEndDateTime] = useState(new Date(Date.now() - 3 * 60 * 60 * 1000));
+
+  useEffect(() => {
+    const currentTime = new Date();
+    setStartDateTime(currentTime);
+
+    const threeHoursAgo = new Date(currentTime.getTime() - 3 * 60 * 60 * 1000);
+    setEndDateTime(threeHoursAgo);
+  }, []);
+
   const data = {
     labels: ['January', 'February', 'March', 'April', 'May', 'June'],
     param1: [65, 59, 80, 81, 56, 55],
@@ -27,11 +40,18 @@ const cardsData = [
   { name: 'Air Quality', value: 'Good' },
   // Add more cards as needed
 ];
+  const handleClick = () => {
+    alert('Button Clicked');
+  }
 
   return (
     <div>
       <Cards cards={cardsData} />
       <h5>Line Chart with Events</h5>
+      <DateTimePickerComponent label="Start DateTime:" defaultDateTime={startDateTime} onChange={setStartDateTime} />
+      <DateTimePickerComponent label="End DateTime:" defaultDateTime={endDateTime} onChange={setEndDateTime} />
+      <Button text="Click Me" onClick={handleClick}/>
+      <Button text="Click Me" onClick={handleClick}/>
       <LineChart data={data} events={events}/>
     </div>
   );
