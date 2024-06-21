@@ -11,7 +11,7 @@ const ReportTable = ({ logo }) => {
           <tr>
             <th colSpan="5">
               <img src={logo} alt="Logo" className="table-logo" />
-              <span className="table-title">Advanced Table</span>
+              <span className="table-title">Report Table</span>
             </th>
           </tr>
           <tr>

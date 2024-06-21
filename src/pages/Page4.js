@@ -6,7 +6,7 @@ import logo from '../assets/logo.png'; // Ensure you have a logo image in the sp
 const Page4 = () => {
   return (
     <div>
-      <h1>Advanced Table with Logo</h1>
+      <h1>Report Table</h1>
       <ReportTable logo={logo} />
     </div>
   );

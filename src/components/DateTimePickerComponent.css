@@ -1,12 +1,12 @@
 /* src/components/DateTimePickerComponent.css */
 /* DateTimePickerComponent.css */
-.custom-date-time-picker {
+.custom-date-time-picker2 {
     margin: 20px;
     padding: 5px;
-    font-size: 6px;
+    font-size: 10 px;
   }
 
 .custom-date-time-picker input {
-font-size: 16px;
+font-size: 14px;
 padding: 5px;
 }

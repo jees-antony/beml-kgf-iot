@@ -3,8 +3,8 @@ import dayjs from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
-import TextField from '@mui/material/TextField';  // Add this import
-import './DateTimePickerComponent.css';
+import TextField from '@mui/material/TextField';
+// import './DateTimePickerComponent.css';
 
 const DateTimePickerComponent = ({ label, defaultDateTime, onChange }) => {
   const [value, setValue] = React.useState(dayjs(defaultDateTime));
@@ -20,7 +20,22 @@ const DateTimePickerComponent = ({ label, defaultDateTime, onChange }) => {
         label={label}
         value={value}
         onChange={handleChange}
-        renderInput={(params) => <TextField {...params} className="custom-date-time-picker"/>}  // Make sure TextField is imported
+        renderInput={(params) => <TextField {...params} sx={{
+          margin: '20px',
+          padding: '10px',
+          '& .MuiOutlinedInput-root': {
+            margin: '10px',
+            padding: '10px',
+          },
+          '& .MuiInputBase-root': {
+            margin: '10px',
+            padding: '10px',
+          },
+          '& .MuiInputBase-input': {
+            fontSize: '14px',
+            padding: '10px',
+          },
+        }} />}
       />
     </LocalizationProvider>
   );

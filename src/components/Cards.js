@@ -7,7 +7,7 @@ const Cards = ({ cards }) => {
     <div className="cards-container">
       {cards.map((card, index) => (
         <div className="params" key={index}>
-          {card.name}: <span className="value">{card.value}</span>
+          {card.name}: <p className="value">{card.value}</p>
         </div>
       ))}
     </div>

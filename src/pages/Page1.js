@@ -29,15 +29,14 @@ const events = [
 ];
 
 const cardsData = [
-  { name: 'Temperature', value: '25.6 °C' },
-  { name: 'Humidity', value: '60%' },
-  { name: 'Pressure', value: '101.3 kPa' },
-  { name: 'Wind Speed', value: '15 km/h' },
-  { name: 'Visibility', value: '10 km' },
-  { name: 'Cloud Cover', value: '40%' },
-  { name: 'Dew Point', value: '12 °C' },
-  { name: 'UV Index', value: '5' },
-  { name: 'Air Quality', value: 'Good' },
+  { name: 'Right Temperature', value: '25.6 °C' },
+  { name: 'Right Sound', value: '60%' },
+  { name: 'Right Speed', value: '101.3 kPa' },
+  { name: 'Left Temperature', value: '15 km/h' },
+  { name: 'Left Sound', value: '10 km' },
+  { name: 'Left Speed', value: '40%' },
+  { name: 'Middle Sound', value: '12 °C' },
+  { name: 'Middle Temperature', value: '5' },
   // Add more cards as needed
 ];
   const handleClick = () => {
@@ -50,8 +49,8 @@ const cardsData = [
       <h5>Line Chart with Events</h5>
       <DateTimePickerComponent label="Start DateTime:" defaultDateTime={startDateTime} onChange={setStartDateTime} />
       <DateTimePickerComponent label="End DateTime:" defaultDateTime={endDateTime} onChange={setEndDateTime} />
-      <Button text="Click Me" onClick={handleClick}/>
-      <Button text="Click Me" onClick={handleClick}/>
+      <Button text="6 Hours" onClick={handleClick}/>
+      <Button text="1 Hour" onClick={handleClick}/>
       <LineChart data={data} events={events}/>
     </div>
   );
