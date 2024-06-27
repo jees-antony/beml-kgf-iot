@@ -1,7 +1,7 @@
 // App.js
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
+// import Navbar from './components/Navbar';
 import SideNav from './components/SideNav';
 import TopBar from './components/TopBar';
 import Page1 from './pages/Page1';
@@ -11,7 +11,7 @@ import Page4 from './pages/Page4';
 import './App.css'; // Create and import this CSS file to handle the main content margin
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
@@ -19,9 +19,8 @@ const App = () => {
 
   return (
       <div>
-        <Navbar toggleNav={toggleNav} />
+        <TopBar toggleNav={toggleNav} />
         <SideNav isOpen={isOpen} toggleNav={toggleNav} />
-        <TopBar/>
         <div className={`main-content ${isOpen ? 'shifted' : ''}`}>
           <Routes>
             <Route path="/page1" element={<Page1 />} />

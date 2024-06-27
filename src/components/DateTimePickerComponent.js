@@ -4,10 +4,11 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker';
 import TextField from '@mui/material/TextField';
-// import './DateTimePickerComponent.css';
+import Box from '@mui/material/Box';
+import './DateTimePickerComponent.css'; // Add this line to import your custom CSS
 
-const DateTimePickerComponent = ({ label, defaultDateTime, onChange }) => {
-  const [value, setValue] = React.useState(dayjs(defaultDateTime));
+const DateTimePickerComponent = ({ defaultValue, label, onChange }) => {
+  const [value, setValue] = React.useState(dayjs(defaultValue));
 
   const handleChange = (newValue) => {
     setValue(newValue);
@@ -16,27 +17,14 @@ const DateTimePickerComponent = ({ label, defaultDateTime, onChange }) => {
 
   return (
     <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <DateTimePicker
-        label={label}
-        value={value}
-        onChange={handleChange}
-        renderInput={(params) => <TextField {...params} sx={{
-          margin: '20px',
-          padding: '10px',
-          '& .MuiOutlinedInput-root': {
-            margin: '10px',
-            padding: '10px',
-          },
-          '& .MuiInputBase-root': {
-            margin: '10px',
-            padding: '10px',
-          },
-          '& .MuiInputBase-input': {
-            fontSize: '14px',
-            padding: '10px',
-          },
-        }} />}
-      />
+      <Box className="datetime-picker-box"> {/* Apply your custom class here */}
+        <DateTimePicker
+          label={label}
+          value={value}
+          onChange={handleChange}
+          renderInput={(props) => <TextField {...props} className="custom-datetime-picker" />}
+        />
+      </Box>
     </LocalizationProvider>
   );
 };

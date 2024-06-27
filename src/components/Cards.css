@@ -2,21 +2,21 @@
 .cards-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 6px;
-  padding: 6px;
+  gap: 3px;
+  /* padding: 2px; */
 }
 
 .params {
-  background-color: #ffffff;
-  width: 200px;
-  margin: 3px;
+  background-color: #6bebff;
+  width: 180px;
+  margin: 8px;
   text-align: center;
-  line-height: 10px;
+  line-height: 14px;
   font-size: 14px;
   border-radius: 10px;
-  box-shadow: 0 4px 8px 0 rgba(199, 197, 197, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(4, 15, 16, 0.2) !important;
   transition: 0.3s;
-  padding: 8px;
+  padding: 3px;
 }
 
 @media (max-width: 768px) {
@@ -34,4 +34,6 @@
 .value {
   font-size: 18px;
   font-weight: bold;
+  margin: 8px;
+
 }

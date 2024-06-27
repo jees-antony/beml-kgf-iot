@@ -1,20 +1,21 @@
 /* src/components/Button.css */
 .custom-button {
-    background-color: #68cd68; /* Green background */
+    background-color: #04AA6D; /* Green background */
     border: none; /* Remove borders */
-    color: white; /* White text */
-    padding: 7px 16px; /* Some padding */
+    color: rgb(254, 255, 255); /* White text */
+    padding: 10px 20px; /* Some padding */
     text-align: center; /* Centered text */
     text-decoration: none; /* Remove underline */
     display: inline-block; /* Get elements to line up */
     font-size: 16px; /* Increase font size */
-    margin: 6px 4px; /* Some margin */
+    margin: 5px 10px; /* Some margin */
     cursor: pointer; /* Pointer/hand icon */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
     border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(12, 11, 11, 0.2) !important;
   }
   
   .custom-button:hover {
-    background-color: #a4c2a4; /* Darker green */
+    background-color: #0fdd0f; /* Darker green */
   }
   

@@ -2,10 +2,17 @@
 .main-content {
   transition: margin-left .5s;
   padding: 10px;
-  background-color: rgb(245, 245, 245);
+  padding-top: 60px;
+  /* background-color: rgb(245, 245, 245); */
 }
 
 .main-content.shifted {
   margin-left: 250px;
 }
 
+@media (max-width: 768px) {
+  .main-content.shifted {
+    margin-left: 0;
+    /* No margin for small screens */
+  }
+}

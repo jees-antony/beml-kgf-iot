@@ -1,12 +1,23 @@
-/* src/components/DateTimePickerComponent.css */
-/* DateTimePickerComponent.css */
-.custom-date-time-picker2 {
-    margin: 20px;
-    padding: 5px;
-    font-size: 10 px;
-  }
+.custom-datetime-picker .MuiInputBase-root {
+  height: 10px;
+  /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+}
 
-.custom-date-time-picker input {
-font-size: 14px;
-padding: 5px;
+.custom-datetime-picker .MuiOutlinedInput-root {
+  height: 100%;
+  /* Ensure the height is consistent */
+  display: flex;
+  align-items: center;
+}
+
+.custom-datetime-picker .MuiInputBase-input {
+  padding: 8px;
+  /* Adjust padding as needed */
+}
+
+.datetime-picker-box {
+  margin: 0 10px;
+  /* Adjust the margin as needed */
 }

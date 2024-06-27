@@ -42,10 +42,13 @@ const LineChart = ({ data, events }) => {
     });
 
     const layout = {
-      title: 'Line Chart with Plotly',
-      xaxis: { title: 'X Axis Title' },
-      yaxis: { title: 'Y Axis Title' },
+      // title: 'Line Chart with Plotly',
+      // xaxis: { title: 'X Axis Title' },
+      // yaxis: { title: 'Y Axis Title' },
       showlegend: true,
+      legend: {
+        xanchor: 'right',
+      },
       hovermode: 'closest',
       plot_bgcolor:"#fefefe",
       paper_bgcolor:"#fefefe",

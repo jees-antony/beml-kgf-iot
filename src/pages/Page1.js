@@ -4,6 +4,9 @@ import LineChart from '../components/LineChart';
 import Cards from '../components/Cards';
 import Button from '../components/Button'; // Import Button component
 import DateTimePickerComponent from '../components/DateTimePickerComponent';
+import './Page1.css';
+// import DateTimeRangePickerComponent from '../components/DateTimeRangePickerComponent';
+
 
 const Page1 = () => {
   const [startDateTime, setStartDateTime] = useState(new Date());
@@ -30,13 +33,13 @@ const events = [
 
 const cardsData = [
   { name: 'Right Temperature', value: '25.6 °C' },
-  { name: 'Right Sound', value: '60%' },
-  { name: 'Right Speed', value: '101.3 kPa' },
-  { name: 'Left Temperature', value: '15 km/h' },
-  { name: 'Left Sound', value: '10 km' },
-  { name: 'Left Speed', value: '40%' },
-  { name: 'Middle Sound', value: '12 °C' },
-  { name: 'Middle Temperature', value: '5' },
+  { name: 'Right Sound', value: '63 dB' },
+  { name: 'Right Speed', value: '250 rpm' },
+  { name: 'Left Temperature', value: '35.2 °C' },
+  { name: 'Left Sound', value: '56 dB' },
+  { name: 'Left Speed', value: '250 rpm' },
+  { name: 'Middle Sound', value: '52 dB' },
+  { name: 'Middle Temperature', value: '35.2 °C' },
   // Add more cards as needed
 ];
   const handleClick = () => {
@@ -46,11 +49,12 @@ const cardsData = [
   return (
     <div>
       <Cards cards={cardsData} />
-      <h5>Line Chart with Events</h5>
+      <div className="controls-container">
       <DateTimePickerComponent label="Start DateTime:" defaultDateTime={startDateTime} onChange={setStartDateTime} />
       <DateTimePickerComponent label="End DateTime:" defaultDateTime={endDateTime} onChange={setEndDateTime} />
       <Button text="6 Hours" onClick={handleClick}/>
       <Button text="1 Hour" onClick={handleClick}/>
+      </div>
       <LineChart data={data} events={events}/>
     </div>
   );

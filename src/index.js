@@ -6,15 +6,19 @@ import { Chart, registerables } from 'chart.js';
 import App from './App';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
+import { CssBaseline } from '@mui/material';
 
 // Register all components
 // Chart.register(...registerables);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Router>
-    <App />
- </Router>
+  <React.StrictMode>
+    <CssBaseline />
+    <Router>
+      <App />
+    </Router>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

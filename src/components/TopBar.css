@@ -1,51 +1,30 @@
 /* src/components/TopBar.css */
 .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #eaeaea;
-    padding: 10px 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    width: calc(100% - 240px); /* Adjust according to the width of your side navbar */
-    top: 0;
-    left: 240px; /* Adjust according to the width of your side navbar */
-    z-index: 1000;
-  }
-  
-  .search-container {
-    display: flex;
-    align-items: center;
-    position: relative;
-  }
-  
-  .search-input {
-    padding: 5px 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding-right: 30px; /* Adjust for the icon space */
-  }
-  
-  .search-icon {
-    position: absolute;
-    right: 10px;
-    color: #888;
-  }
-  
-  .icons-container {
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    margin-left: 20px;
-    font-size: 1.2em;
-    color: #888;
-    cursor: pointer;
-    transition: color 0.3s;
-  }
-  
-  .icon:hover {
-    color: #000;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #b80f0a;
+  color: #ffb8b8;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  /* High z-index to stay on top */
+}
+
+.hamburger-menu {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.icons-container {
+  display: flex;
+  gap: 20px;
+}
+
+.icon {
+  margin-right: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
