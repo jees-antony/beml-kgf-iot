@@ -11,7 +11,7 @@ import Page4 from './pages/Page4';
 import './App.css'; // Create and import this CSS file to handle the main content margin
 
 const App = () => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
 
   const toggleNav = () => {
     setIsOpen(!isOpen);
