@@ -11,21 +11,21 @@
   }
   
   .alert.info {
-    background-color: #a0c4d6;
+    background-color: #a6f0fc;
     border-color: #55909c;
-    color: #869da8;
+    color: #172d37;
   }
   
   .alert.warning {
-    background-color: #dad0a2;
+    background-color: #fff2b7;
     border-color: #7e6b47;
-    color: #8a6d3b;
+    color: #3b2e17;
   }
   
   .alert.error {
-    background-color: #d2a2a2;
+    background-color: #ffc5c5;
     border-color: #ebccd1;
-    color: #a94442;
+    color: #5e2827;
   }
   
   .alert strong {

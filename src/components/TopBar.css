@@ -5,7 +5,7 @@
   align-items: center;
   padding: 10px;
   background-color: #b80f0a;
-  color: #ffb8b8;
+  color: #fbeeee;
   position: fixed;
   width: 100%;
   top: 0;
@@ -16,6 +16,23 @@
 .hamburger-menu {
   font-size: 24px;
   cursor: pointer;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+  /* Adjust as needed */
+  margin-right: 10px;
+}
+
+.company-name {
+  font-size: 20px;
+  /* Adjust as needed */
+  font-weight: bold;
 }
 
 .icons-container {
