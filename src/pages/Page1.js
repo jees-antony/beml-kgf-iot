@@ -49,14 +49,16 @@ const cardsData = [
   return (
     <div>
       <Cards cards={cardsData} />
-      <div className="controls-container">
-      <DateTimePickerComponent label="Start DateTime:" defaultDateTime={startDateTime} onChange={setStartDateTime} />
-      <DateTimePickerComponent label="End DateTime:" defaultDateTime={endDateTime} onChange={setEndDateTime} />
-      <Button text="6 Hours" onClick={handleClick}/>
-      <Button text="1 Hour" onClick={handleClick}/>
+      <div className="chart-container">
+        <div className="controls-container">
+          <DateTimePickerComponent label="Start DateTime:" defaultDateTime={startDateTime} onChange={setStartDateTime} />
+          <DateTimePickerComponent label="End DateTime:" defaultDateTime={endDateTime} onChange={setEndDateTime} />
+          <Button text="6 Hours" onClick={handleClick}/>
+          <Button text="1 Hour" onClick={handleClick}/>
+        </div>
+        <LineChart data={data} events={events}/>
+        </div>
       </div>
-      <LineChart data={data} events={events}/>
-    </div>
   );
 };
 

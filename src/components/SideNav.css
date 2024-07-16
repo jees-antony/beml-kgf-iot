@@ -6,10 +6,12 @@
     z-index: 500;
     top: 0;
     left: 0;
-    background-color: #e5e5e5;
+    margin-top: 20px;
+    background-color: #f8f8f8;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    box-shadow: 5px 20px 10px #959595;
   }
   
   .sidenav a {
