@@ -20,9 +20,10 @@ const DateTimePickerComponent = ({ defaultValue, label, onChange }) => {
       <Box className="datetime-picker-box"> {/* Apply your custom class here */}
         <DateTimePicker
           label={label}
+          slotProps={{ textField: { size: 'small' } }}
           value={value}
           onChange={handleChange}
-          renderInput={(props) => <TextField {...props} className="custom-datetime-picker" />}
+          renderInput={(props) => <TextField {...props}/>}
         />
       </Box>
     </LocalizationProvider>
