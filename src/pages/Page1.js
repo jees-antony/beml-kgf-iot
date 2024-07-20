@@ -7,7 +7,6 @@ import DateTimePickerComponent from '../components/DateTimePickerComponent';
 import './Page1.css';
 // import DateTimeRangePickerComponent from '../components/DateTimeRangePickerComponent';
 
-
 const Page1 = () => {
   const [startDateTime, setStartDateTime] = useState(new Date());
   const [endDateTime, setEndDateTime] = useState(new Date(Date.now() - 3 * 60 * 60 * 1000));
@@ -47,7 +46,7 @@ const cardsData = [
   }
 
   return (
-    <div>
+    <div className='dashboard'>
       <Cards cards={cardsData} />
       <div className="chart-container">
         <div className="controls-container">

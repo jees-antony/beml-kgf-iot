@@ -11,6 +11,7 @@
   top: 0;
   z-index: 1000;
   /* High z-index to stay on top */
+  box-shadow: 1px 3px 10px #959595;
 }
 
 .hamburger-menu {
@@ -44,4 +45,11 @@
   margin-right: 20px;
   font-size: 20px;
   cursor: pointer;
+}
+
+@media (max-width: 400px) {
+  .company-name {
+    display: none;
+    /* No margin for small screens */
+  }
 }
