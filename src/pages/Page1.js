@@ -60,6 +60,7 @@ const Page1 = () => {
           }
         })
       );
+      console.log("data updated")
     } catch (error) {
       console.error('Error fetching data:', error);
     }
@@ -68,8 +69,8 @@ const Page1 = () => {
 
   useEffect(() => {
     fetchData()
-    
-    const interval = setInterval(fetchData, 2000);
+
+    const interval = setInterval(fetchData, 36000);
     return () => clearInterval(interval);
   }, []);
 
